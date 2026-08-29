@@ -37,3 +37,9 @@ include(":app:shared")
 include(":app:webApp")
 include(":core")
 include(":server")
+
+includeBuild("../complib") {
+    dependencySubstitution {
+        substitute(module("com.hoffi.compose:complib-shared")).using(project(":shared"))
+    }
+}

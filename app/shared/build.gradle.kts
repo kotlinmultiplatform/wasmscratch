@@ -58,6 +58,7 @@ kotlin {
         }
         commonMain.dependencies {
             api(project(":core"))
+            implementation("com.hoffi.compose:complib-shared:1.0")
             implementation(libs.compose.runtime)
             implementation(libs.compose.foundation)
             implementation(libs.compose.material3)
